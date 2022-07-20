@@ -1,0 +1,54 @@
+<ion-header>
+  <ion-toolbar color="success">
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-card-title><b>Hospital App</b></ion-card-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+  <ion-card>
+    <ion-card-content>
+      <ion-grid>
+        <ion-row>
+          <ion-col>
+            <img src="https://user-assets-unbounce-com.s3.amazonaws.com/d8d22d36-d13a-11e3-9dec-12314000b04c/25f6d12f-0b15-4069-a265-58e3334db7c2/6-healthcare.original.svg">
+          </ion-col>
+          <ion-col>
+            <img src="https://user-assets-unbounce-com.s3.amazonaws.com/d8d22d36-d13a-11e3-9dec-12314000b04c/b66d2743-e857-4cfb-b4bf-afbc0c7bf6cc/5-transparency.original.svg">
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-card-content>
+  </ion-card>
+  <div class="grid">
+    <ion-card (click)="appointments()">
+      <ion-item>
+        <ion-icon name="medical-outline" slot="start"></ion-icon>
+        <ion-label>Appointments</ion-label>
+      </ion-item>
+      <ion-card-content>
+        Schedule and view the appointments you need easily within the app.
+      </ion-card-content>
+    </ion-card>
+    <ion-card (click)="documents()">
+      <ion-item>
+        <ion-icon name="documents-outline" slot="start"></ion-icon>
+        <ion-label>Documents</ion-label>
+      </ion-item>
+      <ion-card-content>
+        Upload medical information about you and your family to show the doctors with one press of a button.
+      </ion-card-content>
+    </ion-card>
+    <ion-card (click)="contact()">
+      <ion-item>
+        <ion-icon name="call-outline" slot="start"></ion-icon>
+        <ion-label>Contact Us</ion-label>
+      </ion-item>
+    
+      <ion-card-content>
+        Contact our hospital if you need extra help or in cases of emergency.
+      </ion-card-content>
+    </ion-card>
+  </div>
+</ion-content>

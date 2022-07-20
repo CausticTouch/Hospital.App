@@ -1,0 +1,105 @@
+<ion-header>
+  <ion-toolbar color="success">
+    <ion-title>Register</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title color="success">Acount</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <ion-item>
+        <ion-label position="floating">Email</ion-label>
+        <ion-input type="email" type="email" email="" [(ngModel)]="email"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="floating">Password</ion-label>
+        <ion-input type="new-password" type="password" password="" [(ngModel)]="password"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="floating">Confirm Password</ion-label>
+        <ion-input type="new-password" type="password"></ion-input>
+      </ion-item>
+    </ion-card-content>
+  </ion-card>
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title color="success">Gender</ion-card-title>
+    </ion-card-header>
+    <ion-list>
+      <ion-radio-group [(ngModel)]="gender">
+    
+        <ion-item>
+          <ion-label>Male</ion-label>
+          <ion-radio value="male" gender="male" ></ion-radio>
+        </ion-item>
+    
+        <ion-item>
+          <ion-label>Female</ion-label>
+          <ion-radio value="female" gender="female" ></ion-radio>
+        </ion-item>
+    
+        <ion-item>
+          <ion-label>Other</ion-label>
+          <ion-radio value="other" gender="other" ></ion-radio>
+        </ion-item>
+    
+        <ion-item>
+          <ion-label>Rather not disclose</ion-label>
+          <ion-radio value="anonymous" gender="anonymous" ></ion-radio>
+        </ion-item>
+    
+      </ion-radio-group>
+    </ion-list>
+  </ion-card>
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title color="success">Personal Information</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <ion-item>
+        <ion-label position="floating">Name</ion-label>
+        <ion-input type="name" firstName="" [(ngModel)]="firstName"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="floating">Surname</ion-label>
+        <ion-input type="family-name" lastName="" [(ngModel)]="lastName"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="floating">Nationality(Optional)</ion-label>
+        <ion-input type="text" nationality="" [(ngModel)]="nationality"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="floating">Date of Birth</ion-label>
+        <ion-datetime [(ngModel)]="dateBirth"></ion-datetime>
+      </ion-item>
+      <ion-item>
+        <ion-label position="floating">Ocupation(Optional)</ion-label>
+        <ion-input type="text" ocupation="" [(ngModel)]="ocupation"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="floating">Address(Optional)</ion-label>
+        <ion-input type="address" address="" [(ngModel)]="address"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="floating">Postal Code(Optional)</ion-label>
+        <ion-input type="postal-code" postCode="" [(ngModel)]="postCode"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="floating">Height(Optional)</ion-label>
+        <ion-input type="string" height="" [(ngModel)]="height"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="floating">Weight(Optional)</ion-label>
+        <ion-input type="string" weight="" [(ngModel)]="weight"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="floating">Phone Number</ion-label>
+        <ion-input type="tel" phone="" [(ngModel)]="phone"></ion-input>
+      </ion-item>
+    </ion-card-content>
+  </ion-card>
+  <ion-button shape="round" color="light" size="full" (click)="register()">Register</ion-button>
+</ion-content>

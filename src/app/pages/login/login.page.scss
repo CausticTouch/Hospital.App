@@ -1,0 +1,9 @@
+ion-button[color="dark"]{
+    text-transform: initial;
+}
+ion-content{
+    --background: var(--ion-color-success);
+}
+ion-menu{
+    visibility: hidden;
+}
